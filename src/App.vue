@@ -145,7 +145,7 @@
             alt="Your Company"
           />
           <router-link
-            to="/ketcherView"
+            to="/Modal"
             class="pl-4 font-medium text-black dark:text-white"
           >
             Ketcher Demo

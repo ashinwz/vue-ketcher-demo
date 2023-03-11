@@ -1,6 +1,9 @@
 # vue-ketcher-demo
 Ketcher is an open-source web-based chemical structure editor. Ketcher is designed for chemists, laboratory scientists and technicians who draw structures and reactions.
 
+## Demo
+![demo](./ketcher.png)
+
 ## Integrate ketcher sketcher(standalone version)
 Add the index.html file into the public folder
 
