@@ -160,7 +160,7 @@
               :to="item.name"
               class="text-gray-500 dark:text-gray-500 focus:bg-gray-200 dark:focus:bg-gray-600 group-focus:text-gray-800 dark:group-focus:text-white focus:text-gray-800 hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-700 dark:hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
               :class="[
-                this.$route.name === item.name
+                $route.name === item.name
                   ? 'bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-white dark:focus:text-white '
                   : '',
               ]"
@@ -170,14 +170,14 @@
                 class="h-6 w-6"
                 aria-hidden="true"
                 :class="[
-                  this.$route.name === item.name ? 'dark:text-white' : '',
+                  $route.name === item.name ? 'dark:text-white' : '',
                 ]"
               />
               <p
                 class=""
                 :class="[
                   sidebarSmall ? 'ml-4' : 'hidden',
-                  this.$route.name === item.name ? 'dark:text-white' : '',
+                  $route.name === item.name ? 'dark:text-white' : '',
                 ]"
               >
                 {{ item.name }}
