@@ -145,7 +145,7 @@
             alt="Your Company"
           />
           <router-link
-            to="/Modal"
+            to="/"
             class="pl-4 font-medium text-black dark:text-white"
           >
             Ketcher Demo
@@ -153,11 +153,13 @@
         </div>
         <div class="flex flex-1 flex-col overflow-y-auto dark:bg-gray-800">
           <nav class="flex-1 space-y-1 px-2 py-4">
+            <!-- :key="item.name"
+            :href="item.href"
+            :to="item.name" -->
             <router-link
               v-for="item in navigation"
               :key="item.name"
-              :href="item.href"
-              :to="item.name"
+              to="#"
               class="text-gray-500 dark:text-gray-500 focus:bg-gray-200 dark:focus:bg-gray-600 group-focus:text-gray-800 dark:group-focus:text-white focus:text-gray-800 hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-700 dark:hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
               :class="[
                 $route.name === item.name
@@ -398,7 +400,7 @@ import {
 import { MagnifyingGlassIcon } from "@heroicons/vue/20/solid";
 
 const navigation = [
-  { name: "Modal", href: "#Modal", icon: HomeIcon, current: true }
+  { name: "Modal", href: "#", icon: HomeIcon, current: true }
 ];
 const userNavigation = [
   { name: "Your Profile", href: "#demo" },
